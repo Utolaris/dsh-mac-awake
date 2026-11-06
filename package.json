@@ -1,7 +1,11 @@
 {
   "name": "dsh-mac-stay-awake-local",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
+  "os": ["darwin"],
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  },
   "description": "Keep macOS awake while this DSH host runs, without preventing display sleep.",
   "type": "module",
   "main": "./index.js",
@@ -11,7 +15,8 @@
   },
   "dsh": {
     "bundle": {
-      "patch": "./cordis.patch.yml"
+      "patch": "./cordis.patch.yml",
+      "platforms": ["darwin"]
     }
   }
 }
