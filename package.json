@@ -1,12 +1,12 @@
 {
   "name": "dsh-mac-stay-awake-local",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "private": true,
   "os": ["darwin"],
   "engines": {
     "dsh": ">=0.2.2-rc.1 <0.3.0"
   },
-  "description": "Keep macOS awake while this DSH host runs, without preventing display sleep.",
+  "description": "Prevent macOS idle sleep while DSH Desktop is running, except during configured time periods.",
   "type": "module",
   "main": "./index.js",
   "exports": {
